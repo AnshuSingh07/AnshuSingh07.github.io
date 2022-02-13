@@ -44,6 +44,9 @@ body{
     padding-bottom:3rem;
 }
 
+.master-div{
+    padding: 0;
+}
 /*-----------------------------header starts here--------------------------*/
 .navigation-full-width{
     position:fixed;
@@ -104,7 +107,9 @@ body{
 /*-----------------------------header ends here----------------------------*/
 
 /*-----------------------------home starts here--------------------------- */
-
+.home .row{
+    padding-left:1rem;
+}
 .home{
     padding-top:12.5rem;
 }
@@ -143,12 +148,12 @@ body{
     color:#fff;
 }
 .home .home-img{
-    /* background-color: #00dabf; */
+    width:100%;
     margin-left:0;
     padding-left: 0;
 }
 .home .home-blob{
-    width:480px;
+    width:100%;
     fill:var(--secondary);
     margin-top:-6.6rem;
 }
@@ -159,6 +164,12 @@ body{
 
 
 /*-----------------------------about starts here------------------------- */
+
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .about h1{
     font-size:2.5rem;
@@ -197,6 +208,8 @@ body{
     text-decoration: none;
     color:#fff;
 }
+
+
 /*-----------------------------about ends here--------------------------- */
 
 
@@ -388,6 +401,12 @@ body{
         display:flex;
         flex-wrap:wrap-reverse !important;
     }
+
+    
+  .project-bg{
+    height:400px;
+   }
+
 }
 
 
@@ -406,9 +425,17 @@ body{
         padding-top:8rem;
     }
     
-    
-    
+    .home .home-blob{
+        margin-top:-4rem;
+    }
+
+    .project-bg{
+        height:350px;
+       }
+
 }
+
+
 @media only screen and (max-width:768px){
     
     .about p{
@@ -426,15 +453,38 @@ body{
     .home .row{
         display:flex;
         flex-wrap:wrap-reverse !important;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .home .home-img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-blob{
+        width:75%;
     }
 
+}
+
+
+@media only screen and (max-width:660px){
+    .home .home-img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-blob{
+        width:90%;
+    }
 }
 
 
 @media only screen and (max-width:568px){
     
     .about p{
-        padding: 5rem 3rem;     
+        padding: 5rem 1.5rem;     
     }
 
     .project-bg{
@@ -452,11 +502,31 @@ body{
     .home .row{
         display:flex;
         flex-wrap:wrap-reverse !important;
+        justify-content: center;
+        align-items: center;
     }
-    
-
 
 }
+
+
+
+@media only screen and (max-width:500px){
+
+    .home .home-img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-blob{
+        width:100%;
+    }
+
+    .home .move-up{
+        margin-top:-2.5rem;
+    }
+}
+
+
 
 /*-----------------------------media query ends here----------------------------*/
 
