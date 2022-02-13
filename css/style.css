@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;  
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size:15px;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;            /* isko hatane k baad horizontal scroll bar aa raha hai 
+                                  /*but wo kyu aa raha hai i am not able  to solve. ask this to sir*/
+}
+body{
+    background-color:var(--white)  ;
+    overflow-x: hidden;  
+}  
+
+:root{
+
+    --white:#fafafb;
+    --primary:#121212;
+    --primary-light:#2a3a47;
+    /* --primary-light:#2b3741;  discuss with tahsim*/
+    --secondary:#ff746a;
+    --shadow:rgba(0,0,0,.175);
+} 
+
+
+.dark-mode{
+
+    --white:#192025;
+    --primary: #fafafb;
+    --primary-light:#283036;
+    /* --primary-light:#1e2a33; */
+    --secondary:#ff746a;
+    --shadow:rgb(255 255 255 / 20% );
+}
+
+.inner{
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+/*-----------------------------header starts here--------------------------*/
+.navigation-full-width{
+    position:fixed;
+    top:0;
+    z-index: 1;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: var(--primary-light);
+    /* box-shadow: 0 0.5rem 1rem var(--shadow); */
+}
+
+#my-navigation{
+    background-color:transparent;
+    padding:0.5rem 0;
+    margin: 0;
+    border:0;
+}
+
+#my-navigation .navbar-toggle{
+    background-color: transparent;
+    border:0;
+}
+
+#my-navigation .icon-bar{
+    background-color:#fff;
+    width:25px;
+    height:3px;
+}
+
+.navbar-header .navbar-brand{
+    font-size:1.8rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-header .navbar-brand:hover{
+    color:var(--secondary);
+}
+
+#mylist ul li a {
+    font-size:1.1rem;
+    font-weight:500;
+    color:#fff;
+    transition: transform 1s ease;
+}
+
+#mylist ul li a:hover{
+    color:var(--secondary);
+    transform:scale(1.1);
+}
+
+.navbar-collapse{
+    border:0;
+}
+
+/*-----------------------------header ends here----------------------------*/
+
+/*-----------------------------home starts here--------------------------- */
+
+.home{
+    padding-top:12.5rem;
+}
+
+.home h1{
+    font-size:2.5rem;
+    font-weight:600;
+    color:var(--primary);
+}
+.home h3{
+    font-size:1.8rem;
+    font-weight:500;
+    color:var(--primary);
+}
+.home p{
+    font-size:1rem;
+    font-weight:200;
+    color:var(--primary);
+    margin-top: 1.5rem;
+}
+
+.home button{
+    width:120px;
+    height:45px;
+    color:#fff;
+    font-size:1.2rem;
+    background-color: var(--secondary);
+    border:0;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home button a{
+    text-decoration: none;
+    color:#fff;
+}
+.home .home-img{
+    /* background-color: #00dabf; */
+    margin-left:0;
+    padding-left: 0;
+}
+.home .home-blob{
+    width:480px;
+    fill:var(--secondary);
+    margin-top:-6.6rem;
+}
+.home .home-blob-img{
+    width:60%;
+}
+/*-----------------------------home ends here----------------------------- */
+
+
+/*-----------------------------about starts here------------------------- */
+
+.about h1{
+    font-size:2.5rem;
+    font-weight:600;
+    color:var(--primary);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.about p{
+    font-size:1.2rem;
+    font-weight:200;
+    line-height: 2.1rem;
+    color:var(--primary);
+    margin: 2.5rem  0rem   0rem  0rem;
+    box-shadow: 0 1rem 3rem var(--shadow);
+    padding: 5rem 7rem;
+}
+
+.download-resume-btn{
+    text-align: center;
+    margin:3rem 0;
+}
+
+.about button{
+    width:220px;
+    height:45px;
+    color:#fff;
+    font-size:1.1rem;
+    background-color: var(--secondary);
+    border:0;
+    border-radius: 0.3rem;
+}
+
+.about button a{
+    text-decoration: none;
+    color:#fff;
+}
+/*-----------------------------about ends here--------------------------- */
+
+
+/*-----------------------------skills starts here------------------------- */
+
+.skills h1{
+    font-size:2.5rem;
+    font-weight:600;
+    color:var(--primary);
+    margin-bottom:2.5rem;
+    text-align: center;
+}
+
+.skills-IP{
+    margin-top:1.5rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-IP .custom-bar-color{
+    background-color: var(--secondary);
+}
+
+.skills-icons .fab{
+    color:var(--secondary);
+    font-size: 2.3rem;;
+}
+
+.progress-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-text span{
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--primary);
+}
+
+/*-----------------------------skills ends here--------------------------- */
+
+
+/*-----------------------------projects starts here------------------------- */
+.projects h1{
+    font-size:2.5rem;
+    font-weight:600;
+    color:var(--primary);
+    text-align: center;
+    margin-bottom:3rem;
+  
+
+}
+
+.projects .col-lg-4{
+    display: flex;
+    justify-content: center;
+    padding-top:1rem;
+    padding-bottom:1rem;
+
+}
+.project-bg{
+    width:100%;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end; 
+}
+
+.project-view-1{
+    background-image: url("../image/projection.png");
+}
+.project-view-2{
+    background-image: url("../image/projection.png");
+}
+.project-view-3{
+    background-image: url("../image/projection.png");
+}
+.project-view-4{
+    background-image: url("../image/phaseshift.png");
+}
+.project-view-5{
+    background-image: url("../image/phaseshift.png");
+}
+.project-view-6{
+    background-image: url("../image/phaseshift.png");
+}
+
+
+.view{
+    width:120px;
+    height:45px;
+    font-size:1.2rem;
+    background-color: var(--secondary);
+    border:0;
+    opacity:0;
+    transition:all 1s ease-in-out;
+}
+.view a{
+    text-decoration: none;
+    color:#fafafb;
+}
+
+.change{
+    opacity:100;
+    transform: scale(1.5);
+    transform: translateY(-200px);
+}
+
+.skills-icons img{
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*-----------------------------projects ends here--------------------------- */
+
+
+/*-----------------------------contact starts here-------------------------*/
+.contact h1{
+    font-size:2.3rem;
+    font-weight:600;
+    color:var(--primary);
+    margin-bottom:2.5rem;
+    text-align: center;
+    margin-top:3rem;
+}
+
+
+.contact-icon a{
+    text-decoration:none;
+}
+
+
+.contact-icon span{
+    font-size:2.3rem;
+    color:var(--secondary);
+    padding:1rem 2rem;
+    margin-top:2rem;
+}
+
+
+.contact p{
+    font-size:1.2rem;
+    font-weight:500;
+    color:var(--primary);
+    margin-top:1.5rem;
+}
+
+
+ 
+#top-button{
+    font-size:3.2rem;
+    color: var(--secondary);   
+    position:fixed;
+    right:1.5rem;
+    bottom:1.5rem;
+    cursor: pointer;
+    display:none;
+}
+
+
+.location-map{
+    margin-top:3rem;
+    margin-bottom:4rem;
+    padding: 1rem;
+    box-shadow: 0rem 1rem 2rem var(--shadow);
+}
+/*-----------------------------contact ends here---------------------------*/
+
+
+
+
+/*-----------------------------media query starts here---------------------------*/
+@media only screen and (max-width:1200px){
+    .home .row{
+        display:flex;
+        flex-wrap:wrap-reverse !important;
+    }
+}
+
+
+@media only screen and (max-width:992px){
+    
+    .about p{
+        padding: 5rem 7rem;     
+    }
+
+    .home .row{
+        display:flex;
+        flex-wrap:wrap-reverse !important;
+    }
+
+    .home{
+        padding-top:8rem;
+    }
+    
+    
+    
+}
+@media only screen and (max-width:768px){
+    
+    .about p{
+        padding: 5rem 5rem;     
+    }
+    .project-bg{
+        height:700px;
+    }
+
+    .navbar-nav{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .home .row{
+        display:flex;
+        flex-wrap:wrap-reverse !important;
+    }
+
+}
+
+
+@media only screen and (max-width:568px){
+    
+    .about p{
+        padding: 5rem 3rem;     
+    }
+
+    .project-bg{
+        height:400px;
+    }
+
+    .contact p{
+        font-size:1rem;
+    }
+
+    .contact-icon span{
+        padding:1rem 1rem;
+    }
+
+    .home .row{
+        display:flex;
+        flex-wrap:wrap-reverse !important;
+    }
+    
+
+
+}
+
+/*-----------------------------media query ends here----------------------------*/
+
+
+
+
