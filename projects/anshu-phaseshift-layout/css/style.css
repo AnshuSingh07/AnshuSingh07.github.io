@@ -1,0 +1,575 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing :border-box;
+    font-family:'Railway' , sans-serif;
+}
+
+html{
+    font-size:14px;
+}
+
+/* background starts */
+.background{
+    width:100%;
+    background-image:url(../image/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left:0 ;
+}
+/* background ends */
+
+/* header starts */
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: #0F1116;
+    padding: 1.25rem 2rem;
+    color:#fff;
+    position: fixed;
+    left:0;
+    top:0;
+}
+
+.logo{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight:600;
+    padding-top: 0.5rem;
+}
+.templated{
+    font-size: 1.25rem;
+    font-weight:100;
+    color:#555555;
+    margin-left:0.50rem;
+    display:inline-block !important;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    font-size:1.1rem;
+    color:rgba(255, 255, 255, 0.75);
+    padding:0.5rem 1rem;
+    cursor: pointer;
+}
+
+.inner{
+    max-width:1250px;
+    margin: 0 auto;
+    padding:5% 2%;
+}
+
+.headings{
+    text-align: center;
+    color:#fff;
+    font-size: 1.8rem;
+    line-height:3.5rem;
+    padding-top:10rem; /*margin top kaam nahi kiya position:fixed lene se nav me */
+}
+
+.headings p{
+    width:90%;
+    /* background-color: aqua; */
+    text-align: center;
+    margin: 0 auto;
+}
+.bold{
+    font-weight:600;
+}
+.headings a{
+    color:#fff;
+    text-decoration-color: #fff;
+}
+
+.big-button{
+    width:250px;
+    height:60px;
+    background-color: #d84780;
+    border:0;
+    border-radius: 6px;
+    font-family: 'Railway' , sans-serif;
+    font-size:1.7rem;
+    font-weight:600;
+    color:#fff;
+    margin-top:6%;
+    cursor: pointer;
+}
+/* header ends */
+
+/* image gallery starts */
+.flex-box{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery{
+    width:30%;
+    background-color:#fff;
+    border-radius:6px;
+    text-align:center;
+    margin-bottom: 3rem;
+}
+
+.gallery img{
+    width:100%;
+}
+
+.gallery p{
+    font-size:1.1rem;
+    line-height:2rem;
+    padding:3rem 2rem;
+    color:#555555;
+}
+
+.small-button{
+    width:175px;
+    height:53px;
+    background-color: #d84780;
+    border:0;
+    border-radius: 6px;
+    font-family: 'Railway' , sans-serif;
+    font-size:1.3rem;
+    font-weight:600;
+    color:#fff;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+/* image gallery ends */
+
+
+
+
+
+
+/* icon-section starts */
+.icon-section{
+    max-width:1250px;
+    margin: 0 auto;
+    padding:0% 0% 8% 0%;
+}
+
+.left-icon{
+    width:50%;
+    padding:0 1.5rem 0 1.5rem;
+}
+
+.left-icon section{
+    width:100%;
+}
+
+.left-icon .fa{
+    color:#fff;
+    font-size: 3rem;
+   
+}
+
+.left-icon .change-position{
+    width:87%;
+    position: relative;
+    left:2rem;
+}
+
+
+
+.icon-section hr{
+    width:100%;
+    height:0.5px;
+    border:none;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+
+
+.left-icon h3{
+    color:#fff;
+    font-size:2.1rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.left-icon span{
+    color:#fff;
+    font-size:1.1rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+.right-icon{
+    width:50%;
+    padding:0 1.5rem 0 1.5rem;
+}
+
+.right-icon section{
+    width:100%;
+}
+
+.right-icon .fa{
+    color:#fff;
+    font-size: 3rem;
+}
+
+
+.right-icon .change-position{
+    width:87%;
+    position: relative;
+    left:2rem;
+}
+
+.right-icon h3{
+    color:#fff;
+    font-size:2.1rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.right-icon span{
+    color:#fff;
+    font-size:1.1rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+/* icon-section ends */
+
+
+
+
+
+
+/* form starts */
+.form-wrapper{
+    width:100%;
+    background-color:#d84780;
+    text-align: center;
+}
+
+.form-heading h1{
+     font-size:3rem;
+     font-weight:800;
+     color:#fff;
+}
+.form-heading h3{
+     font-size:1.5rem;
+     font-weight:400;
+     color:#fff;
+     margin-top:1rem;
+     margin-bottom:4rem;
+}
+
+form{
+    width:70%;
+    margin:0 auto;
+}
+
+form input{
+    width:100%;
+    height:3.5rem;
+    border:0;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+::placeholder{
+    font-size: 1.1rem;
+    color:#ada8a8;
+    padding-left:1rem;
+}
+form textarea{
+    width:100%;
+    height:14rem;
+    border:0;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    padding-top:1.5rem;
+}
+
+.send-button{
+    width:210px;
+    height:58px;
+    background-color: #d84780;
+    border:1px solid #fff;
+    border-radius: 6px;
+    font-family: 'Railway' , sans-serif;
+    font-size:1.3rem;
+    font-weight:600;
+    color:#fff;
+    cursor: pointer;
+}
+/* form ends */
+
+/* footer starts */
+footer{
+    background-color: rgb(15, 15, 15);
+}
+
+footer p{
+    color:#555555;
+    font-size: 1.1rem;
+    font-weight:300;
+    margin-bottom: 2.5rem;
+}
+footer p span{
+    color:rgb(129, 126, 126);
+}
+
+.social{
+    margin-bottom: 2%;
+}
+.social a{
+    padding:0.3rem;
+}
+.social span{
+     width:2.3rem;
+     height:2.3rem;
+     color:grey;
+     padding:0.6rem 0.6rem;
+     border:1px solid grey;
+     border-radius:55%;
+}
+
+/* footer ends */
+
+
+
+
+/*collapsible navbar starts*/
+nav span{
+    display: none!important;
+    font-size: 1.2rem!important;
+    cursor: pointer;
+}
+.logo-new{
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing:0.1rem;
+    display: none!important;
+}
+/*collapsible navbar ends*/
+
+/* .change-sidemenu{
+    width:35%;
+    height:100vh;
+    background-color:#0F1116 ;
+    position:fixed;
+    top:0;
+    left:0rem;
+    z-index:0;
+    transition:0.5s;
+} */
+
+.change-sidenav{
+    width:35%;
+    height:100vh;
+    background-color:#0F1116 ;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#main{
+    margin-left:0;
+}
+
+.change-main{
+    margin-left: 35% !important;
+}
+
+
+/* media query starts*/
+@media only screen and (max-width:1280px){
+
+    .headings{
+        font-size:1.6rem;
+        line-height:2.8rem;
+    }
+}
+
+@media only screen and (max-width:980px){
+
+    .headings{
+        font-size:1.4rem;
+        line-height:2.8rem;
+    }
+}
+
+
+@media only screen and (max-width:840px){
+
+    nav span{
+        display:block !important;
+    }
+
+    .logo-new{
+        display: block !important;
+        margin: 0 auto;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    nav ul{
+        display:none;
+       
+    }
+    .headings{
+        font-size:1.1rem;
+        line-height:2rem;
+    }
+
+    .big-button{
+        width:350px;
+        height:50px;
+        font-size:1.2rem;
+    }
+
+    .gallery p{
+        font-size:1rem;
+    }
+
+    .small-button{
+        width:180px;
+        height:40px;
+        font-size:1rem;
+    }
+
+    .icon-section{
+        display: block;
+    }
+    
+
+    .left-icon{
+        width:100%;
+        margin-bottom: 8rem;
+    }
+    
+    .left-icon .fa{
+        width:6%;
+        font-size: 2.5rem;
+    }
+    .left-icon .change-position{
+        width:90%;
+    }
+    .left-icon h3{
+        font-size:1.4rem;
+    }
+    .left-icon span{
+        font-size: 1rem;
+    }
+
+
+
+    .right-icon{
+        width:100%;
+        padding-bottom: 3rem;
+        /* margin-bottom: 5rem; */
+    }
+    
+    .right-icon .fa{
+        width:6%;
+        font-size: 2.5rem;
+    }
+    .right-icon .change-position{
+        width:90%;
+    }
+    .right-icon h3{
+        font-size:1.4rem;
+    }
+    .right-icon span{
+        font-size: 1rem;
+    }
+
+
+    .form-heading h1{
+        font-size: 1.7rem;
+    }
+
+    .form-heading h3{
+        font-size:1.1rem;
+    }
+
+    form{
+        width:100%;
+    }
+
+    ::placeholder{
+        font-size:1rem;
+    }
+
+    .send-button{
+        width:210px;
+        height:45px;
+        font-size:1rem;
+        letter-spacing:0.3rem;
+    }
+
+    footer p{
+        font-size:1rem;
+    }
+}
+
+
+
+@media only screen and (max-width:640px){
+    .image-gallery{
+        display:block;
+    }
+
+    .gallery{
+        width:100%;
+    }
+
+    .small-button{
+        width:350px;
+    }
+
+    .icon-section{
+        padding:0% 3%;
+    }
+
+    
+    .right-icon{
+        width:100%;
+        padding-bottom: 3rem;
+        /* margin-bottom: 5rem; */
+    }
+    
+}
+
+@media only screen and (max-width:400px){
+
+    .big-button{
+        width:250px;
+    }
+    .small-button{
+        width:250px;
+    }
+}
+
+@media only screen and (max-width:300px){
+
+    .big-button{
+        width:200px;
+    }
+    .small-button{
+        width:200px;
+    }
+}
+/* media query ends*/

@@ -8,7 +8,7 @@
 }
 
 html{
-    font-size:15px;
+    font-size:14px;
     scroll-behavior: smooth !important;
     overflow-x: hidden;            /* isko hatane k baad horizontal scroll bar aa raha hai 
                                   /*but wo kyu aa raha hai i am not able  to solve. ask this to sir*/
@@ -23,7 +23,6 @@ body{
     --white:#fafafb;
     --primary:#121212;
     --primary-light:#2a3a47;
-    /* --primary-light:#2b3741;  discuss with tahsim*/
     --secondary:#ff746a;
     --shadow:rgba(0,0,0,.175);
 } 
@@ -34,7 +33,6 @@ body{
     --white:#192025;
     --primary: #fafafb;
     --primary-light:#283036;
-    /* --primary-light:#1e2a33; */
     --secondary:#ff746a;
     --shadow:rgb(255 255 255 / 20% );
 }
@@ -285,22 +283,31 @@ body{
 }
 
 .project-view-1{
-    background-image: url("../image/projection.png");
+    background-image: url("../image/klassycafe.png");
 }
 .project-view-2{
-    background-image: url("../image/projection.png");
+    background-image: url("../image/citylisting.png");
 }
 .project-view-3{
-    background-image: url("../image/projection.png");
+    background-image: url("../image/fanadesh.png");
 }
 .project-view-4{
-    background-image: url("../image/phaseshift.png");
+    background-image: url("../image/zou.png");
 }
 .project-view-5{
-    background-image: url("../image/phaseshift.png");
+    background-image: url("../image/mirko.png");
 }
 .project-view-6{
     background-image: url("../image/phaseshift.png");
+}
+.project-view-7{
+    background-image: url("../image/projection.png");
+}
+.project-view-8{
+    background-image: url("../image/hielo.png");
+}
+.project-view-9{
+    background-image: url("../image/theory.png");
 }
 
 

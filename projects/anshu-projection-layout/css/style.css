@@ -1,0 +1,246 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*custom-banner-starts*/
+.custom-banner-wrapper{
+    width:100%;
+    background-image:url("../image/banner.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+/*navigation-starts*/
+.navbar-header .navbar-toggle{
+     background-color: none;
+     border:0;
+}
+#my-navigation .navbar-toggle:hover{
+    background:none;
+}
+#my-navigation .icon-bar{
+    background-color: seashell;
+}
+#my-navigation{
+    background-color: transparent;
+    border:none;
+    margin-top:3%;
+}
+#my-navigation .navbar-brand{
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+}
+#mynavbar a{
+    color:#fff;
+}
+/*navigation-ends*/
+
+/*hero-area starts*/
+.banner-heading h1{
+    text-align:center;
+    color:#fff;
+    font-size:55px;
+    font-weight:400;
+    margin:10% 0%;
+}
+.icon , .icon-camera{
+    text-align:center;
+    color:#fff;
+}
+.icon .fa ,.icon-camera .fa{
+    font-size:40px;
+    color:seagreen;
+}
+.icon h3 , .icon-camera h3{
+    font-size:25px;
+    font-weight:400;
+    color:#fff;
+}
+.icon p , .icon-camera p{
+    font-size:16px;
+    font-weight:400;
+    color:rgb(243, 235, 235);
+}
+
+.icon-camera{
+    border-left:2px solid rgb(189, 184, 184);
+    border-right:2px solid rgb(189, 184, 184);
+}
+
+
+.my-button{
+    margin:8% auto;
+    text-align:center;
+}
+
+.my-button button{
+    width:200px;
+    height:8vh;
+    border-radius:30px;
+    border:3px solid seagreen;
+    background-color: transparent;
+    color:seagreen;
+    font-weight:900;
+    font-size:13px;
+}
+/*hero-area ends*/
+
+/*custom-banner-ends*/
+
+
+/*two-section strats*/
+.two-section{
+    text-align:center;
+    margin:10% auto;
+}
+.two-section img{
+    border-radius:100%;
+}
+.left , .right{
+    width:70%;
+    margin:0 auto;
+}
+
+.left h3 , .right h3{
+    font-size:28px;
+    font-weight:400;
+    color:black;
+    line-height: 20px;
+}
+
+.left p, .right p{
+    font-size:16px;
+    color:grey;
+    margin-top:50px;
+}
+
+.custom-button{
+    width:170px;
+    height:8vh;
+    border-radius:30px;
+    border:3px solid seagreen;
+    color:seagreen;
+    margin-top:25px;
+    background-color: #fff;
+}
+/*two-section ends*/
+
+/*footer-wrapper starts*/
+.footer-wrapper{
+    background-color: seagreen;
+    /* padding:1px; */
+}
+.footer-heading h3{
+    font-size:30px;
+    font-weight:600;
+    color:seashell;
+    margin-top:100px;
+    text-align: center;
+}
+
+.add-margin{
+    margin-top:5%;
+}
+.form-group input{
+    width:100%;
+    height:8vh;
+    border-radius:10px;
+    border: 1px solid white;
+    background-color:transparent;
+}
+
+.form-group textarea{
+    width:100%;
+    height:30vh;
+    border-radius:10px;
+    border:1px solid white;
+    background-color: transparent;
+}
+.form-group label{
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+}
+.form-group ::placeholder{
+    color:rgba(194, 189, 189, 0.938);
+    font-size: 15px;
+}
+
+.send-button{
+    text-align: center;
+    margin:3% 0;
+
+}
+.send-button button{
+    width:200px;
+    height:7vh;
+    border-radius:25px;
+    border:2px solid seashell;
+    background-color: transparent;
+    color:seashell;
+    font-weight:400;
+    font-size:13px;
+}
+
+
+.footer-para p{
+    text-align:center;
+    color:rgb(184, 179, 179);
+    font-size:13px;
+    margin-bottom:12%;
+}
+/*footer-wrapper ends*/
+
+
+
+@media only screen and (max-width :966px){
+     
+    .banner-heading h1{
+        font-size:45px;
+    }
+
+    .icon h3 , .icon-camera h3{
+        font-size:20px;
+    }
+
+  
+}
+
+@media only screen and (max-width :766px){
+    
+
+    .icon .fa ,.icon-camera .fa{
+        font-size:30px;
+    
+    }
+    .icon-camera{
+        border:0;
+    }
+
+    hr{
+        display:none;
+    }
+
+    .right{
+        margin-top:50px;
+    }
+}
+
+
+@media only screen and (max-width :482px){
+
+    .banner-heading h1{
+        font-size:30px;
+    }
+    .custom-button{
+        width:100%;
+    }
+    .send-button button{
+        width:90%;
+    }
+  
+}
