@@ -7,6 +7,7 @@
 
 html{
     font-size:14px;
+    scroll-behavior: smooth;
 }
 
 /* background starts */
@@ -30,6 +31,7 @@ nav{
     position: fixed;
     left:0;
     top:0;
+    z-index: 1;
 }
 
 .logo{
@@ -381,6 +383,8 @@ nav span{
     display:flex;
     flex-direction: column;
     cursor: pointer;
+    transition: all 1s ease !important; 
+    /* transition is not getting applied  */
 }
 
 #main{
@@ -389,6 +393,7 @@ nav span{
 
 .change-main{
     margin-left: 35% !important;
+    overflow-x: hidden;
 }
 
 
