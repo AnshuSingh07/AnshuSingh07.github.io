@@ -109,6 +109,8 @@ body{
     padding-left:1rem;
 }
 .home{
+    width:100%;
+    height:100vh;
     padding-top:12.5rem;
 }
 
@@ -221,35 +223,38 @@ body{
     text-align: center;
 }
 
-.skills-IP{
+.skill-icon{
     margin-top:1.5rem;
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.skills-IP .custom-bar-color{
-    background-color: var(--secondary);
-}
 
-.skills-icons .fab{
+.skill-icon .fab{
     color:var(--secondary);
-    font-size: 2.3rem;;
+    font-size: 4rem;;
 }
 
-.progress-text{
-    display: flex;
-    justify-content: space-between;
-}
 
-.progress-text span{
+.skill-icon span{
     font-size:1.2rem;
     font-weight:600;
     color:var(--primary);
+    margin-top: 1rem;
 }
 
+.skill-icon:hover{
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+}
+
+.skill-icon .jquery-logo{
+    width:55px;
+    height:55px;
+}
 /*-----------------------------skills ends here--------------------------- */
 
 
@@ -282,32 +287,14 @@ body{
     align-items:flex-end; 
 }
 
-.project-view-1{
-    background-image: url("../image/klassycafe.png");
-}
-.project-view-2{
-    background-image: url("../image/citylisting.png");
-}
-.project-view-3{
-    background-image: url("../image/fanadesh.png");
-}
 .project-view-4{
-    background-image: url("../image/zou.png");
+    background-image: url("../image/klassycafe.png");
 }
 .project-view-5{
     background-image: url("../image/mirko.png");
 }
 .project-view-6{
-    background-image: url("../image/phaseshift.png");
-}
-.project-view-7{
-    background-image: url("../image/projection.png");
-}
-.project-view-8{
-    background-image: url("../image/hielo.png");
-}
-.project-view-9{
-    background-image: url("../image/theory.png");
+    background-image: url("../image/zou.png");
 }
 
 
@@ -342,6 +329,11 @@ body{
     background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.inner-skill{
+    padding-top:3rem;
+    padding-bottom:3rem;
 }
 
 /*-----------------------------projects ends here--------------------------- */
@@ -531,9 +523,44 @@ body{
     .home .move-up{
         margin-top:-2.5rem;
     }
+
+
+    .inner-skill{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .skill-icon span{
+        font-size: 1rem;
+    }
+
+    .skill-icon .fab{
+        font-size: 3.5rem;
+    }
+
+    .skill-icon .jquery-logo{
+        width:50px;
+        height:50px;
+    }
+
 }
 
+@media only screen and (max-width:350px){
+ 
+    .skill-icon span{
+        font-size: 0.9rem;
+    }
 
+    .skill-icon .fab{
+        font-size: 3rem;
+    }
+
+    .skill-icon .jquery-logo{
+        width:45px;
+        height:45px;
+    }
+
+}
 
 /*-----------------------------media query ends here----------------------------*/
 
