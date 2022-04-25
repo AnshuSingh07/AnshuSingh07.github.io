@@ -219,22 +219,28 @@ body{
 
 
 /*-----------------------------skills starts here------------------------- */
-
+.skills .center-icon{
+    display: flex;
+    justify-content: center;
+}
 .skills h1{
     font-size:2.5rem;
     font-weight:600;
     color:var(--primary);
-    margin-bottom:2.5rem;
+    margin-bottom:4rem;
     text-align: center;
 }
 
 .skill-icon{
+    border-radius: 0.3rem;
+    padding: 1.5rem  0.5rem;
     margin-top:1.5rem;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0rem 1rem 3rem var(--shadow);
 }
 
 
@@ -260,6 +266,11 @@ body{
     width:55px;
     height:55px;
 }
+.inner-skill{
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
 /*-----------------------------skills ends here--------------------------- */
 
 
@@ -335,11 +346,6 @@ body{
     background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
-
-.inner-skill{
-    padding-top:3rem;
-    padding-bottom:3rem;
 }
 
 /*-----------------------------projects ends here--------------------------- */
@@ -476,6 +482,11 @@ body{
         width:75%;
     }
 
+    .skills .center-icon{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+
 }
 
 
@@ -554,6 +565,10 @@ body{
         height:50px;
     }
 
+    .skills .center-icon{
+        padding-left:1rem;
+        padding-right:1rem;
+    }
 }
 
 @media only screen and (max-width:350px){

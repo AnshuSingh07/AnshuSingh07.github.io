@@ -8,7 +8,7 @@
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   height: 100%;
 }
 
@@ -389,7 +389,7 @@ header {
 
 .change {
   transform: translateY(-200px);
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 
 .removeChange {
@@ -794,7 +794,7 @@ footer {
 
   .change-feature {
     visibility: visible;
-    transform: translateY(0px);
+    transform: translateY(-10px);
     transition: transform 0.5s ease;
   }
 
