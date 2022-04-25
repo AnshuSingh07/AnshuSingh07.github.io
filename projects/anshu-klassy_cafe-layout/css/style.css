@@ -603,7 +603,8 @@ header {
 .block-icon {
   position: absolute;
   top: -2rem;
-  left: 35%;
+  left:50%;
+  transform: translateX(-50%);
 }
 
 .contact .contact-right {
@@ -830,12 +831,6 @@ footer {
     margin-top: 4rem;
   }
 
-  .block-icon {
-    position: absolute;
-    top: -3rem;
-    left: 45%;
-  }
-
   .block-icon .fa-stack {
     font-size: 3.5rem;
   }
@@ -906,11 +901,6 @@ footer {
     padding: 5rem 2rem;
   }
 
-  .block-icon {
-    position: absolute;
-    top: -3rem;
-    left: 40%;
-  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -937,11 +927,6 @@ footer {
     font-size: 4.6rem;
   }
 
-  .block-icon {
-    position: absolute;
-    top: -3rem;
-    left: 37%;
-  }
 }
 
 /*-----------------------------media query ends here-------------------------------*/
