@@ -64,3 +64,14 @@ AOS.init({
   // once:"true",
 });
 
+
+
+window.addEventListener("mouseup", function (event) {
+  if (
+    !document.getElementById("mylist").contains(event.target) &&
+    !document.getElementById("menu-button").contains(event.target)
+  ) {
+    document.getElementById("menu-button").classList.add("collapsed");
+    document.getElementById("mylist").classList.remove("in");
+  }
+});
