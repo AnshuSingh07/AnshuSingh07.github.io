@@ -1,16 +1,25 @@
-function onclickmenu(){
+function onclickmenu() {
   document.getElementById("menu-bar").classList.toggle("change");
 }
 
-function topshift(){
-  if(screen.width<768){
-    document.getElementById("contactTop-shift").classList.toggle("change-contact");
+function topshift() {
+  if (screen.width < 768) {
+    document
+      .getElementById("contactTop-shift")
+      .classList.toggle("change-contact");
+  }
+}
+function removeChange() {
+  if (screen.width < 768) {
+    document
+      .getElementById("contactTop-shift")
+      .classList.remove("change-contact");
   }
 }
 
 // function topshift (){
 //   var x=document.getElementById("contactTop-shift");
-  
+
 //   if(screen.width<=768){
 //     console.log("anshu");
 //     console.log(x.style.marginTop);
@@ -37,25 +46,25 @@ function topshift(){
 //   }
 // }
 
-
 var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
-},
-  slidesPerView:3,
+  },
+  slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup:1,
-  breakpoints:{       /* each value defines a particular screen size width */
-    200: {    
-      slidesPerView:1     /*property for screen size >= 200*/
+  slidesPerGroup: 1,
+  breakpoints: {
+    /* each value defines a particular screen size width */
+    200: {
+      slidesPerView: 1 /*property for screen size >= 200*/,
     },
     768: {
-      slidesPerView:2     /*property for screen size >= 768*/
+      slidesPerView: 2 /*property for screen size >= 768*/,
     },
     992: {
-      slidesPerView:3     /*property for screen size >= 992*/
-    }
+      slidesPerView: 3 /*property for screen size >= 992*/,
+    },
   },
   loop: true,
   loopFillGroupWithBlank: true,
@@ -69,29 +78,21 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
 window.onscroll = function () {
-	mytopBtn() // back to top button
+  mytopBtn(); // back to top button
 };
 
-
-function mytopBtn(){
-    
-  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-     document.getElementById("top-button").style.display ="block";
-  }
-  else{
-     document.getElementById("top-button").style.display ="none";
+function mytopBtn() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top-button").style.display = "block";
+  } else {
+    document.getElementById("top-button").style.display = "none";
   }
 }
 
-function topFunction(){
-  document.documentElement.scrollTop ="0";
+function topFunction() {
+  document.documentElement.scrollTop = "0";
 }
-
-
-
-
 
 AOS.init({
   duration: 1000,

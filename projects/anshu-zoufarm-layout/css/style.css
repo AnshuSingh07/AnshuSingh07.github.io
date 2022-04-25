@@ -10,12 +10,12 @@
 
 html{
   font-size:14px;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;   
 }
 
 body{
     width: 100%;
-    height:100% !important;  
+    height:100% !important; 
     overflow-x: hidden;
 }
 
@@ -147,6 +147,10 @@ body{
 /* ------------------------------opportunities starts here-------------------------- */
 .opportunities{
   padding-top:8rem;
+}
+
+.opportunities .heading{
+  padding:0 2rem;
 }
 
 .opportunities .heading h1{

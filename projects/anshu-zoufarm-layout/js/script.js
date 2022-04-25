@@ -10,6 +10,9 @@ var no_1 = document.getElementById("num-1");
 
 //--------------------------------------------------------------------------------
 
+
+
+
 function switchCard(event) {
   if (event.id == "num-2") {
     no_1.classList.remove("num-change");
