@@ -923,12 +923,13 @@ footer .form-group .form-control{
     border-radius:0.3rem 0  0  0.3rem;
 }
 footer .form-group .email-btn{
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
     background-color: transparent;
     border-width:2px;
     border-image-source: var(--gradient);
     border-image-slice: 1;
     margin-left:-1px;
+    border-width:2px;
 }
 
 .email-btn:hover{

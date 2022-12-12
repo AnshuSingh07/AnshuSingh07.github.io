@@ -16,16 +16,16 @@ icon.onclick = function(){
 
 
 // js for displaying animated view button
-var divs = document.getElementsByClassName("project-bg");
-for(let i=0;i<divs.length;i++){
-    console.log(divs[i]);
-    divs[i].addEventListener("mouseenter",function(){
-        divs[i].querySelector(".view").classList.add("change");
-    })
-    divs[i].addEventListener("mouseleave",function(){
-        divs[i].querySelector(".view").classList.remove("change");
-    })
-}
+// var divs = document.getElementsByClassName("project-bg");
+// for(let i=0;i<divs.length;i++){
+//     console.log(divs[i]);
+//     divs[i].addEventListener("mouseenter",function(){
+//         divs[i].querySelector(".view").classList.add("change");
+//     })
+//     divs[i].addEventListener("mouseleave",function(){
+//         divs[i].querySelector(".view").classList.remove("change");
+//     })
+// }
 
 
 

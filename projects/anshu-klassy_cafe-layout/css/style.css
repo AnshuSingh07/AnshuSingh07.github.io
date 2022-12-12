@@ -45,10 +45,10 @@ header {
 .menu-list {
   visibility: hidden;
   opacity: 0;
-  width: 80%;
+  width: 95%;
   position: absolute;
   top: 10.5rem;
-  left: 10%;
+  left: 2.5%;
   z-index: 1;
   text-align: center;
   background-color: #ffff;
@@ -217,6 +217,7 @@ header {
 .carousel-height .carousel-inner .item img {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
 
 /*-----------------------------banner ends here--------------------------------*/
@@ -416,13 +417,9 @@ header {
   font-size: 5rem !important;
 }
 
-/* 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
-    background-color: none !important;
-    border: 0 !important;
-} */
-
-/* this is not working  ....the background is not getting removed */
+.owl-theme .owl-nav [class*=owl-]:hover {
+     background:none !important;
+}
 
 /*-----------------------------menu ends here---------------------------------*/
 
@@ -603,8 +600,7 @@ header {
 .block-icon {
   position: absolute;
   top: -2rem;
-  left:50%;
-  transform: translateX(-50%);
+  left: 35%;
 }
 
 .contact .contact-right {
@@ -647,8 +643,11 @@ header {
   appearance: none;
 }
 
-#mydate {
-  appearance: none !important;
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator
+{
+  display: none;
+  -webkit-appearance: none;
 }
 
 #mycomment {
@@ -831,6 +830,12 @@ footer {
     margin-top: 4rem;
   }
 
+  .block-icon {
+    position: absolute;
+    top: -3rem;
+    left: 45%;
+  }
+
   .block-icon .fa-stack {
     font-size: 3.5rem;
   }
@@ -852,6 +857,10 @@ footer {
   .carousel-height .carousel-inner .item img {
     width: 100%;
     height: auto;
+  }
+  .about-right {
+    width: 100%;
+    height: 40vh;
   }
 }
 
@@ -884,6 +893,10 @@ footer {
   .change-feature-small-screen {
     display: block;
   }
+  .about-right {
+    width: 100%;
+    height: 80vh;
+  }
   
 }
 
@@ -901,6 +914,11 @@ footer {
     padding: 5rem 2rem;
   }
 
+  .block-icon {
+    position: absolute;
+    top: -3rem;
+    left: 40%;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -927,6 +945,11 @@ footer {
     font-size: 4.6rem;
   }
 
+  .block-icon {
+    position: absolute;
+    top: -3rem;
+    left: 35%;
+  }
 }
 
 /*-----------------------------media query ends here-------------------------------*/

@@ -10,8 +10,7 @@
 html{
     font-size:14px;
     scroll-behavior: smooth !important;
-    overflow-x: hidden;            /* isko hatane k baad horizontal scroll bar aa raha hai 
-                                  /*but wo kyu aa raha hai i am not able  to solve. ask this to sir*/
+    overflow-x: hidden;
 }
 body{
     background-color:var(--white)  ;
@@ -98,6 +97,7 @@ body{
 #mylist ul li a:hover{
     color:var(--secondary);
     transform:scale(1.1);
+    transition: transform .5s ease;
 }
 
 .navbar-collapse{
@@ -196,10 +196,14 @@ body{
 
 .download-resume-btn{
     text-align: center;
-    margin:3rem 0;
+    margin:3rem 0rem 2rem 0rem;
+}
+.certificate-btn{
+    text-align: center;
+    margin:0 auto;
 }
 
-.about button{
+.about .download-resume-btn button{
     width:220px;
     height:45px;
     color:#fff;
@@ -209,13 +213,74 @@ body{
     border-radius: 0.3rem;
 }
 
-.about button a{
+.about .download-resume-btn button a{
     text-decoration: none;
     color:#fff;
 }
 
 
 /*-----------------------------about ends here--------------------------- */
+
+/*-----------------------------experience starte here--------------------------- */
+.experience h1{
+    font-size:2.5rem;
+    font-weight:600;
+    color:var(--primary);
+    margin-bottom:4rem;
+    text-align: center;
+}
+
+.experience .exp-card h2 {
+    font-size:2.2rem;
+    font-weight:500;
+    line-height: 2.1rem;
+    color:var(--primary);
+}
+.experience .exp-card h3{
+    font-size:1.8rem;
+    font-weight:500;
+    line-height: 2rem;
+    color:var(--primary);
+}
+.experience .exp-card h4 ,
+.experience .exp-card .exp-date,
+.experience .exp-card ul li
+{
+    color:var(--primary);
+}
+.experience .exp-card ul{
+    color:var(--primary);
+    margin-top:1rem;
+}
+
+.experience .exp-card{
+    border-radius: 0.3rem;
+    padding: 2.5rem;
+    margin-top:1.5rem;
+    box-shadow: 0rem 1rem 3rem var(--shadow);
+    transition: all 0.4s ease;
+    transform: scale(0.95);
+}
+.experience .exp-card:hover{
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+.experience .certificate-btn button{
+    margin-top:2rem;
+    width:200px;
+    height:40px;
+    color:#fff;
+    font-size:1.1rem;
+    background-color: var(--secondary);
+    border:0;
+    border-radius: 0.3rem;
+}
+
+.experience .certificate-btn button a{
+    text-decoration: none;
+    color:#fff;
+}
+/*-----------------------------experience ends here--------------------------- */
 
 
 /*-----------------------------skills starts here------------------------- */
@@ -241,6 +306,7 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0rem 1rem 3rem var(--shadow);
+    transition: all 0.4s ease;
 }
 
 
@@ -304,18 +370,21 @@ body{
     align-items:flex-end; 
 }
 
+.project-view-3{
+    background-image: url("../image/mirko.png");
+}
 .project-view-4{
     background-image: url("../image/klassycafe.png");
 }
 .project-view-5{
-    background-image: url("../image/mirko.png");
+    background-image: url("../image/citylisting.png");
 }
 .project-view-6{
     background-image: url("../image/zou.png");
 }
 
 
-.view{
+.project-bg .view{
     width:120px;
     height:45px;
     font-size:1.2rem;
@@ -323,15 +392,15 @@ body{
     border:0;
     opacity:0;
     transition:all .6s ease-in-out;
+    transform: translateY(0px);
+
 }
-.view a{
+.project-bg .view a{
     text-decoration: none;
     color:#fafafb;
 }
-
-.change{
+.project-bg:hover .view{
     opacity:100;
-    transform: scale(1.5);
     transform: translateY(-200px);
 }
 
@@ -372,8 +441,12 @@ body{
     color:var(--secondary);
     padding:1rem 2rem;
     margin-top:2rem;
+    transition: transform .5s ease;
 }
 
+.contact-icon span:hover{
+    transform: scale(1.2);
+}
 
 .contact p{
     font-size:1.2rem;
@@ -408,20 +481,25 @@ body{
 
 /*-----------------------------media query starts here---------------------------*/
 @media only screen and (max-width:1200px){
-    .home .row{
-        display:flex;
-        flex-wrap:wrap-reverse !important;
+ 
+   .project-bg{
+      height:450px;
     }
-
-    
-  .project-bg{
-    height:400px;
-   }
-
+    .project-bg:hover .view{
+        opacity:100;
+        transform: translateY(-190px);
+    }    
+    .project-view-3 , .project-view-4{
+        margin-bottom: 4rem;
+    }
 }
 
 
 @media only screen and (max-width:992px){
+    .project-bg:hover .view{
+        opacity:100;
+        transform: translateY(-170px);
+    }   
     
     .about p{
         padding: 5rem 7rem;     
@@ -430,25 +508,48 @@ body{
     .home .row{
         display:flex;
         flex-wrap:wrap-reverse !important;
+        justify-content: center;
+        align-items: center;
     }
 
     .home{
+        margin-top: 0;
         padding-top:9rem;
+        height: auto !important;
+    }    
+
+
+    .home .move-up{
+        margin-top:-2rem;
     }
-    
+
     .home .home-blob{
-        margin-top:-4rem;
+        width:95%;
+    }
+
+    .home .home-img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-bg{
-        height:350px;
-       }
-
+        height:400px;
+       }  
 }
 
 
 @media only screen and (max-width:768px){
-    
+    .project-view-3 , 
+    .project-view-4 ,
+    .project-view-5 ,
+    .project-view-6{
+        margin-bottom: 4rem;
+    }
+    .project-bg:hover .view{
+        opacity:100;
+        transform: translateY(-300px);
+    }   
     .about p{
         padding: 5rem 5rem;     
     }
@@ -472,6 +573,11 @@ body{
         justify-content: center;
         align-items: center;
     }
+    
+    .home .move-up{
+        margin-top:0rem;
+    }
+
    
     .home .home-img{
         display:flex;
@@ -503,7 +609,10 @@ body{
 
 
 @media only screen and (max-width:568px){
-    
+    .project-bg:hover .view{
+        opacity:100;
+        transform: translateY(-150px);
+    }   
     .about p{
         padding: 5rem 1.5rem;     
     }
@@ -585,6 +694,10 @@ body{
         width:45px;
         height:45px;
     }
+    .home .move-up{
+        margin-top:0rem;
+    }
+
 
 }
 
